@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+    <TextView
+        android:id="@+id/greetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="3dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Hello!" />
+
+
+    <TextView
+        android:id="@+id/welcometitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/greetings"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="User Details"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/sampletitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometitle"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Your Subjects"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/optionGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sampletitle"
+        android:orientation="vertical">
+
+
+    <RadioButton
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/optionGroup"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:text="Option 1" />
+
+    <RadioButton
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option1"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:text="Option 2" />
+
+    <RadioButton
+        android:id="@+id/option3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/option2"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="20dp"
+        android:padding="16dp"
+        android:text="Option 3" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/markbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/optionGroup"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#800080"
+        android:text="Mark Attendance"/>
+
+
+</RelativeLayout>

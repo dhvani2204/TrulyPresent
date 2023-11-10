@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TrulyPresent</string>
+    <string name="click_to_login">Click to Login</string>
+    <string name="logout">Logout</string>
+
+    <string-array name="spinner_options">
+        <item>Select Branch/Div</item>
+        <item>AIML-A</item>
+        <item>AIML-B</item>
+        <item>CS-A</item>
+        <item>CS-B</item>
+        <item>CS-C</item>
+        <item>EnTc-A</item>
+        <item>EnTc-B</item>
+        <item>RnA-A</item>
+        <item>RnA-B</item>
+        <item>Mech-A</item>
+        <item>Mech-B</item>
+        <item>Civil-A</item>
+        <item>Civil-B</item>
+    </string-array>
+    <string-array name="spinner_options1">
+        <item>Select Batch</item>
+        <item>2020-2024</item>
+        <item>2021-2025</item>
+        <item>2022-2026</item>
+        <item>2023-2027</item>
+    </string-array>
+    <string-array name="spinner_options2">
+        <item>Select Department</item>
+        <item>CS</item>
+        <item>AIML</item>
+        <item>EnTc</item>
+        <item>RnA</item>
+        <item>Mechanical</item>
+        <item>Civil</item>
+    </string-array>
+</resources>

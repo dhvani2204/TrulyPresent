@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/StudentSignUpPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSignUp">
+
+    <TextView
+        android:id="@+id/Studsignuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Student Sign Up"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/StudNametitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Studsignuptitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:text="Name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/StudName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudNametitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter your name"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/BranchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudBatch"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Branch/Div"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/StudDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BranchTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Branch/Div"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+
+
+    <TextView
+        android:id="@+id/StudentEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudDept"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="E-mail"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/StudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentEmailTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/StudPassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudentEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/StudPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudPassTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/StudPrnTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="PRN"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/StudPrn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudPrnTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Prn"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/StudBatchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudPrn"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Batch"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/StudBatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudBatchTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Batch"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupStud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StudPass"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#800080"
+        android:text="Sign Up" />
+
+</RelativeLayout>

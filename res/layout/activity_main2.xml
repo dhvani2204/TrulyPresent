@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity1">
+
+    <TextView
+        android:id="@+id/welcometitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="Subject Details"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/sampletitle1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcometitle1"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Lecture taken in..."
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/BrDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sampletitle1"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Branch/Div"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/BrD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BrDTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Branch/Div"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:layout_below="@+id/BrD"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="19dp"
+        android:adjustViewBounds="true"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/CaptAtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectedImageView"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:background="#800080"
+        android:text="Capture Class Photo" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/UplAtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CaptAtt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:background="#800080"
+        android:text="Upload Class Photo" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ViewAtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UplAtt"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20dp"
+        android:background="#800080"
+        android:text="View Attendance" />
+
+
+
+</RelativeLayout>

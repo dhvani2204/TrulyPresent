@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_options3">
+        <item>Select Branch/Div</item>
+        <item>AIML-A</item>
+        <item>AIML-B</item>
+        <item>CS-A</item>
+        <item>CS-B</item>
+        <item>CS-C</item>
+        <item>EnTc-A</item>
+        <item>EnTc-B</item>
+        <item>RnA-A</item>
+        <item>RnA-B</item>
+        <item>Mech-A</item>
+        <item>Civil-A</item>
+        <!-- Add more options as needed -->
+    </string-array>
+</resources>

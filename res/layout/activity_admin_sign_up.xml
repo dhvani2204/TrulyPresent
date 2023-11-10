@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AdminSignUpPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminSignUp">
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Admin Sign Up"
+        android:textSize="35dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/AdName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signuptitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:text="Name"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/FacName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AdName"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter your name"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/DeptTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacId"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Department"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/FacDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DeptTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Department"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/FacultyEmailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacDept"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="E-mail"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/FacultyEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacultyEmailTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Email"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/FacPassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacultyEmail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/FacPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacPassTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/FacIdtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Faculty ID"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/FacId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacIdtitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:background="#308467D7"
+        android:hint="Enter Faculty ID"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="17dp" />
+<ProgressBar
+    android:id="@+id/progressBar"
+    android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signUpAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FacPass"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#800080"
+        android:text="Sign Up" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:id="@+id/loginNow"
+        android:text="@string/click_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpAd"/>
+
+</RelativeLayout>

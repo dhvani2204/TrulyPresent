@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ModelResults">
+    <TextView
+        android:id="@+id/ResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="Students Present"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/recognizedNamesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ResultTitle"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:text=""
+        android:textSize="18sp" />
+
+</RelativeLayout>
